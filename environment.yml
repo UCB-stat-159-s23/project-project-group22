@@ -10,5 +10,4 @@ dependencies:
   - ipython
   - ipykernel
   - datetime
-  - zoneinfo
   - scipy
