@@ -287,3 +287,16 @@ def rtu_energy_daily(start, end, unit):
         energy_daily = pd.concat([time_df, value_df], axis = 1).reset_index(drop=True)
         
     return energy_daily
+
+
+
+def avg_data(data, columnName):
+    """
+    helper function to take the average of all the data except 'date'
+    Arg:
+        data: input the data to take the average of
+    Return:
+        data_df: a dataframe that shows the average of the input dataset
+    """
+    data[columnName] = data.loc[:, data.columns != 'date'].mean(axis=1)
+    return data[['date', columnName]]
