@@ -2,8 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: main.ipynb
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+- file: combined_analysis.ipynb
+

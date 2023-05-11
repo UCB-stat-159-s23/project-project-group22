@@ -1,0 +1,697 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>STAT 159 Final Project - Group 22 &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'main';</script>
+    <link rel="canonical" href="/user/hamsa//proxy/absolute/8000/main.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="STAT 159 Final Project - Group 22" href="combined_analysis.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    STAT 159 Final Project - Group 22
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="combined_analysis.html">STAT 159 Final Project - Group 22</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmain.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/main.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>STAT 159 Final Project - Group 22</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-of-building-energy-management">Analysis of Building Energy Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assumption">Assumption</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#author-contributions">Author Contributions</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="stat-159-final-project-group-22">
+<h1>STAT 159 Final Project - Group 22<a class="headerlink" href="#stat-159-final-project-group-22" title="Permalink to this headline">#</a></h1>
+<section id="analysis-of-building-energy-management">
+<h2>Analysis of Building Energy Management<a class="headerlink" href="#analysis-of-building-energy-management" title="Permalink to this headline">#</a></h2>
+<p><strong>Research Question</strong>: How is the energy consumption of Wang Hall influenced by various factors?</p>
+<p><strong>Authors</strong>: Aoyu, Emma, Hamsa, Reuel</p>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>Buildings consume approximately 40% of the primary energy in the United States. Today’s technologies (e.g., energy efficiency, sensors, and advanced controls) could reduce energy use in buildings by up to 50%. However, reducing energy waste in buildings and optimizing building operations is not a simple problem to mitigate. There are many different factors (i.e. CO2 emissions, occupancy, outdoor temperature, indoor air)  that play a role in energy consumption. We are interested in exploring if certain factors play a much bigger role in energy consumption and if our analysis can lead us to any revelations on which factors should be focused on first in an attempt to reduce energy consumption.</p>
+<p>The target building of this dataset is a medium-sized building (Wang Hall) located inside the Lawrence Berkeley National Laboratory campus in Berkeley, CA. The building has 10,400 m^2 of conditioned spaces on four floors.The purpose of analyzing the energy management of Wang Hall is to determine the correlation between energy consumption and various factors, such as occupancy and outdoor temperature.</p>
+<p>In order to investigate this question, we will exploring what CO2 emissions look like hourly during two different seasons of the year, how CO2 emissions compare with indoor temperature, and how occupancy level and outdoor weather impact  energy consumption.</p>
+<p><img alt="Screen Shot 2023-05-09 at 11.18.25 AM Medium Small.jpeg" src="attachment:67049919-2efa-4c2f-8795-acdfc2abe467.jpeg" /></p>
+<p>Wang Hall in Berkeley, CA</p>
+</section>
+<section id="assumption">
+<h2>Assumption<a class="headerlink" href="#assumption" title="Permalink to this headline">#</a></h2>
+<p>The major assumption we made about the data is that the sensor calibration is accurate, with no need for adjustment to the measurements.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="k">as</span> <span class="nn">dt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="exploratory-data-analysis">
+<h2>Exploratory Data Analysis<a class="headerlink" href="#exploratory-data-analysis" title="Permalink to this headline">#</a></h2>
+<p><strong>CO2 Emissions Hourly</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython</span> <span class="kn">import</span> <span class="n">display</span>
+<span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/hourlyc02_june1.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5c11d5ec51cfe5c9a99d9016c5ef318fa55c36abcaee16a92d151c890b7da37e.jpg" src="_images/5c11d5ec51cfe5c9a99d9016c5ef318fa55c36abcaee16a92d151c890b7da37e.jpg" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/hourlyc02_june2.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/191adf1b9f8ce3942df8149252e42d860ae617164626c4b1813e94a4059fa4f6.jpg" src="_images/191adf1b9f8ce3942df8149252e42d860ae617164626c4b1813e94a4059fa4f6.jpg" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/hourlyc02_june3.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/dc9e89c755e99064b7d5ee4f8dfb807845ff4e0282340f63c0f376e8bea7cea4.jpg" src="_images/dc9e89c755e99064b7d5ee4f8dfb807845ff4e0282340f63c0f376e8bea7cea4.jpg" />
+</div>
+</div>
+<p>In these figures we can observe that in the summertime, as seen in the visualization of the CO2 levels throughout the days of June 1st, 2nd, and 3rd there is a maximum in the CO2 levels around mid-day to afternoon, and it stays at the peak CO2 levels throughout this time. This may be due to the relationship between temperature and CO2 levels, where higher temperatures are related to higher CO2 levels. It can also be the case that because of more extreme temperatures in the middle of the day to afternoon, more energy is used to cool the building, leading to higher CO2 emissions.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/hourlyc02_dec1.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/6b3b62b8028b2e0e507ad61b307db37d2c9a07cfc1c9702f73d5955984983870.jpg" src="_images/6b3b62b8028b2e0e507ad61b307db37d2c9a07cfc1c9702f73d5955984983870.jpg" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/hourlyc02_dec2.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b69866bd708cb3f627e66fab32c0f979fcde0bbf6e1a63295452b8febc759471.jpg" src="_images/b69866bd708cb3f627e66fab32c0f979fcde0bbf6e1a63295452b8febc759471.jpg" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/hourlyc02_dec3.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/8f85a5197e30c650354c414b6153376c1a98d83b94da390b1676d34e73066b18.jpg" src="_images/8f85a5197e30c650354c414b6153376c1a98d83b94da390b1676d34e73066b18.jpg" />
+</div>
+</div>
+<p>On the contrary, we can observe that during the winter in December 1st, 2nd, and 3rd, there is a singular peak of CO2 levels that occurs around mid-day. This might be the case that during the day, the most energy is used in the building, but only for a shorter period of time compared to the summer. This is a reasonable explanation taking into account the climate of Berkeley, where summers can get very hot and require the use of air-conditioning, while in the winter temperatures are generally cooler and don’t need air-conditioning indoors.</p>
+<p>To conduct this analysis, we first imported the dataset, made the date variable hourly, and extracted the CO2 levels of each hour of the day to create the visualizations using matplotlib. To conduct a more comprehensive analysis of the CO2 levels throughout the day, it would be best to compare the trend for all days of the year, even across multiple years. This would help find out if there are any anomalies or outliers that should be considered when looking at patterns. It is also not clear just from this analysis what exactly causes the differing CO2 emission levels throughout the day and may be due to several different factors.</p>
+<p><strong>Comparing CO2 emission to interior temperature</strong></p>
+<p>We also wanted to observe if interior temperature of the building had any impact on the carbon emission. We suspected that by observing the interior temperature of the building, we can see if the usage of air conditioning could have had any influence on the building’s carbon emission. To do so, we extracted the data for carbon emission and interior temperature of the building and took the average of all the hourly data to compare them side by side.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/hourly-july1st_co2.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d814c9986766c207c45bad8680bfbd9365c95e67fb722f5c0420ae83f3fa96e2.png" src="_images/d814c9986766c207c45bad8680bfbd9365c95e67fb722f5c0420ae83f3fa96e2.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/hourly-july1st interior temp.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/403c9d03e53dad2afdc5a897d64f11b5e19a23ead3d28a787f558ffff9a0083a.png" src="_images/403c9d03e53dad2afdc5a897d64f11b5e19a23ead3d28a787f558ffff9a0083a.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/co2 vs int-temp.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5c6793be30a38857740d2d4e1136ec1df301f8bce5765414806030eee489b825.png" src="_images/5c6793be30a38857740d2d4e1136ec1df301f8bce5765414806030eee489b825.png" />
+</div>
+</div>
+<p>The plot doesn’t seem to show any big correlation between the average interior temperature and the average CO2 emission. We decided to compare these two factors because we assumed that the increase or decrease of interior temperature meant the usage of air conditioning inside the building. However, we were not able to reach the conclusion that we had hoped to make from the data upon plotting them. This graph shows that either the building relies on other resources that aren’t air conditioning (that emit little CO2) to maintain interior temperature or that the building’s air conditioning system emits CO2 that is comparably negligible to other sources of the building that emit CO2. Also, another factor that caught our attention that could have contributed to this non-correlation of data could have been the fact that 2020 was the year of the COVID outbreak that caused most, if not all, in-person activities to stop, which could have affected the building’s usage of air conditioning. We tried to look for more data outside of the year 2020, but the data for carbon emission was only available for the year 2020.</p>
+<p><strong>Occupancy level and outdoor weather impact on energy consumption</strong></p>
+<p>In order to explore how occupancy level and outdoor weather influence energy consumption of the selected site, we narrow down the research scope to cooling season around August. According to the air conditioning mechanical system design, cooling energy is mostly provided through the a water-cooled direct expansion (DX) coils from rooftop units, which then supplies cool air to the underfloor plenums. Therefore, we define the time interval of the analysis to be from 2018-08-10 to 2018-08-17.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/occupancy_2018_08_10.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/bd3fd2caefe54cddae2b6fb4c27fd42821c8d6c9e7c97a997b179d2c7a314abe.png" src="_images/bd3fd2caefe54cddae2b6fb4c27fd42821c8d6c9e7c97a997b179d2c7a314abe.png" />
+</div>
+</div>
+<p>We first plotted the occupancy sensor data from the selected site shown in the above figure. It is clear to notice during weekend (08-11 and 08-12), no occupancy recorded in the building and a dramatic increase in occupancy on Monday (08-13). Also, when looking closer to daily occupancy counts, we notice one valley at noon indicating lunch break in the office and two peaks indicating morning arrival and afternoon return after lunch.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/weather_2018_08_10.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/1a62b2bcb69fe0e6696bc6dba37c863f502fa9648a1964913c1e8ff9cd698f2d.png" src="_images/1a62b2bcb69fe0e6696bc6dba37c863f502fa9648a1964913c1e8ff9cd698f2d.png" />
+</div>
+</div>
+<p>We also plotted the outdoor temperature within the specified time window. The recorded air temperature ranges from 12°C at night to 24°C as highest during the day, which shows rather mild climate. Another factor which could potentially influence thermal properties of the building is the solar radiation. With large areas of glazing on the facade, solar radiation may result in excessive heat gain during the day for south facing windows. We noticed that there is a noticeable decrease in temperature and solar radiation in 08-15.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/hourly_meter_2018_08_10.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b047977e6f7e598e95b065a0c7f12211cc19524abf5c958ae0f2210d271c30a3.png" src="_images/b047977e6f7e598e95b065a0c7f12211cc19524abf5c958ae0f2210d271c30a3.png" />
+</div>
+</div>
+<p>We first plotted the overall energy meter data of the building. In general, HVAC system in the north side tends to have higher cooling demand than the south side despite having less influence from the solar radiation. During the night, the energy consumption of those mechanical conditioning systems dropped to around 20kW, but never completely turned off. This might be due to minimum ventilation requirement even when the occupancy is low. However, it is surprising to notice that the lighting energy reduced to around 0kW during weekend but HVAC system still keeps running even when there is no occupancy, which may cause energy waste.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/hourly_rtu_2018_08_10.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9c3d4018f035305085fb50fcb8fd96d864c454a6953a384cec0c18ab1a854472.png" src="_images/9c3d4018f035305085fb50fcb8fd96d864c454a6953a384cec0c18ab1a854472.png" />
+</div>
+</div>
+<p>The data responsible for handling cooling load are generated from the rooftop units. To approximate cooling load, we extracted mixed air temperature, supply air temperature and supply airflow rate and calculate using the following equation:</p>
+<p><span class="math notranslate nohighlight">\(q = c_p * \rho * (t_{mixed} - t_{supply}) * Q_{supply}\)</span></p>
+<p>Where <span class="math notranslate nohighlight">\(c_p\)</span> is the specific heat capacity of air and <span class="math notranslate nohighlight">\(\rho\)</span> is the density of the air. We calculate the <span class="math notranslate nohighlight">\(\Delta t\)</span> from mixed and supply air temperature and multiply altogether with air volumetric flow rate <span class="math notranslate nohighlight">\(Q\)</span> in CFM. After comparing with outdoor air, we found a correlation with the air temperature fluctuation. Especially on 08-14 and 08-15, where the low outdoor temperature result in very low cooling load of the building and as a contrary on 08-10, where the high outdoor temperature result in high cooling load. This could be explained by the availability of free cooling energy provided by the outdoor air and so the mixed air is in lower temperature.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/daily_rtu_2018_08_10.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/80013300892f4a4b4d9ec42dfb70293adfd3749451c5e5e0d8caf76a95e7853b.png" src="_images/80013300892f4a4b4d9ec42dfb70293adfd3749451c5e5e0d8caf76a95e7853b.png" />
+</div>
+</div>
+<p>When we aggregate to daily energy consumption, it is shocking to see the energy consumption is high during weekend, which account for 300kW and 200kW respectively for Saturday and Sunday. This indicates a need for more advanced control logic of the mechanical system as future retrofit project.</p>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h2>
+<p>Through our various analysis, we discovered some interesting findings. From the first analysis, we inferred that higher temperatures are related to higher CO2 levels. We hypothesize this to be due to more extreme temperatures in the middle of the day to afternoon leading to requiring more energy to be used to cool the building, leading to higher CO2 emissions. However, due to lack of expertise knowledge, it is not clear just from this analysis what exactly causes the differing CO2 emission levels throughout the day and may be due to several different factors. From the second analysis,
+we wanted to see if an increase or decrease of interior temperature would affect the usage of air conditioning inside the building. However, we were not able to reach the conclusion that we had hoped to make from the data. We hypothesis that the building relies on other resources that aren’t air conditioning (that emit little CO2) to maintain interior temperature or that the building’s air conditioning system emits CO2 that is comparably negligible to other sources of the building that emit CO2. Lastly, for the 3rd analysis, we learned that there was high energy consumption on weekends and the HVAC system continues to run even when there is no occupancy, which may cause energy waste.</p>
+<p>Although our analysis led to many great finds, it continues to remain unclear which factor has the greatest influence on energy consumption. We can rule out interior temperature since there was no correlation between indoor temperature and air conditioning usage. However, we recommend additional analysis in CO2 emissions, as well occupancy.</p>
+</section>
+<section id="author-contributions">
+<h2>Author Contributions<a class="headerlink" href="#author-contributions" title="Permalink to this headline">#</a></h2>
+<p>Aoyu: Provided dataset with description, conducted energy analysis on occupancy and outdoor temperature, wrote functions in tools package</p>
+<p>Emma: Wrote initial README, conducted C02 emission analysis, and wrote unit tests for functions</p>
+<p>Hamsa: Wrote the introduction and conclusion of the main.ipynb, created environment, notebook, and binder, edited the <a class="reference external" href="http://README.md">README.md</a></p>
+<p>Reuel: Wrote Makefile and conducted C02 emission vs interior temperature analysis.</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="right-next"
+       href="combined_analysis.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">STAT 159 Final Project - Group 22</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-of-building-energy-management">Analysis of Building Energy Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assumption">Assumption</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#author-contributions">Author Contributions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
